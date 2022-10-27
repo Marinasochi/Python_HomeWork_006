@@ -9,8 +9,8 @@ def input_set(mes):                          # Позволяет ввести �
      print('\033[1;31mЭто не число!\033[0m')
      return input_set(mes)
 
-def summa_el(lst):
-    sum = 0
+def summa_el(lst):                           # Возвращает сумму элементов списка, стоящих на
+    sum = 0                                  # нечетных местах
     for i in range(1, len(lst), 2):
         sum += lst[i]
     return sum     
